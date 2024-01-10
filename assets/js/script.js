@@ -56,7 +56,7 @@ $(document).ready(function () {
         console.log(cityLat)
         var cityLon = data[0].lon
         console.log(cityLon)
-        var weatherUrl = 'api.openweathermap.org/data/2.5/forecast?lat=' + cityLat + '&lon=' + cityLon + '&appid=6c31869795f0dd512d210bae2ff7b924';
+        var weatherUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + cityLat + '&lon=' + cityLon + '&appid=6c31869795f0dd512d210bae2ff7b924';
         console.log(weatherUrl)
         getWeatherApi(weatherUrl);
     };
@@ -64,14 +64,26 @@ $(document).ready(function () {
     async function getWeatherApi(requestUrl) {
         const response = await fetch(requestUrl)//   async await method
         const data = await response.json()
-        console.log(data)
+        console.log(data);
+        var cloudStatus = data.list[2].weather[0].main
+        var temp = data.list[2].main.temp
+        var tempF = (temp -273.15) *9/5 + 32
+        var humidity = data.list[2].main.humidity
+        var windSpeed = data.list[2].wind.speed
+        console.log(cloudStatus)
+        console.log(temp)
+        console.log(humidity)
+        console.log(windSpeed)
+        currentDay.children().eq(1).text(`Temp: ${tempF.toFixed(2)}°F`)
+        currentDay.children().eq(2).text(`Wind: ${windSpeed} MPH`)
+        currentDay.children().eq(3).text(`Humidity: ${humidity}%`)
     };
 
     btn.on('click', function () {
         console.log('ok')
         var inputVal = cityInput.val();   
         currentDay.children().eq(0).text(inputVal)
-        var requestUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + inputVal + '&limit=5&appid=6c31869795f0dd512d210bae2ff7b924'
+        var requestUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + inputVal + '&limit=5&appid=6c31869795f0dd512d210bae2ff7b924'
         getLocApi(requestUrl);
         storeHistory();
         }
