@@ -36,6 +36,16 @@ div {
     border-radius: 5px;
 }
 
+#current-day h2 {
+    padding-left: .63rem;
+}
+
+#current-day p {
+    padding-left: .63rem;
+    padding-top: .63rem;
+    font-size: 1.1rem;
+}
+
 /* .five-day-card {
     hght: 20rem;
 } */
