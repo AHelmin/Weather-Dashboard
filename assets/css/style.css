@@ -1,0 +1,53 @@
+
+
+header {
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    padding-left: 150px;
+}
+
+div {
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+.search-container button {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: blue;
+    color: lightgrey;
+    padding: 5px 0;
+    border-radius: 5px;
+   
+}
+
+.search-container #city-name {
+    width: 100%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+/* .five-day-card {
+    hght: 20rem;
+} */
+
+#current-day {
+    height: 15.5rem;
+}
+
+#five-day {
+    height: 25rem;
+}
+
+/* .left-container {
+    text-align: center;
+} */
