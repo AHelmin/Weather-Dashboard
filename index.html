@@ -14,76 +14,61 @@
         <h1>Weather Dashboard</h1>
     </header>
 
-   <div class="d-flex container-fluid flex-wrap-column flex-sm-row flex-row">
-        <div class="col-3 order-sm-0 left-container">
+    <div class="d-flex container-fluid flex-wrap-column flex-md-row flex-column">
+        <div class="col-12 col-md-3 order-sm-0 left-container">
             <div class="col-12 search-container">
                 <h2>Search for a City:</h2>
+                <form>
                 <label for="city-name"></label>
                 <input type="text" id="city-name" name="city-name" placeholder="Enter City Name"><br>
                 <button type="button" id="btn">Search</button>
+                </form>
             </div>
-            <div class="col-12" id="search-history">Search History</div>
+            <div class="col-12" id="search-history"></div>
         </div>
-        <div class="col-9  order-sm-1 right-container">
+        <div class="col-12 col-md-9  order-sm-1 ml-1 right-container">
             <div class="col-12" id="current-day">
                 <h2>Current City/Day</h2>
                 <p>Temp</p>
                 <p>Wind</p>
                 <p>Humidity</p>
             </div>
-            <div class="col-12" id="five-day">
+            <div class="col-12">
                 <h2>5-day Forecast:</h2>
-                <div class="container-fluid row no-gutters justify-content-around">
-                    <div class="card five-day-card" style="width: 15rem; height: 18rem;">
+                <div class="container-fluid row no-gutters justify-content-around" id="five-day">
+                    <div class="card five-day-card" style="width: 12rem; height: 14rem;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+
                         </div>
                     </div>
-                    <div class="card five-day-card" style="width: 15rem; height: 18rem;">
+                    <div class="card five-day-card" style="width: 12rem; height: 14rem;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p> 
+
                         </div>
                     </div>
-                    <div class="card five-day-card" style="width: 15rem; height: 18rem;">
+                    <div class="card five-day-card" style="width: 12rem; height: 14rem;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+
                         </div>
                     </div>
-                    <div class="card five-day-card" style="width: 15rem; height: 18rem;">
+                    <div class="card five-day-card" style="width: 12rem; height: 14rem;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+
                         </div>
                     </div>
-                    <div class="card five-day-card" style="width: 15rem; height: 18rem;">
+                    <div class="card five-day-card" style="width: 12rem; height: 14rem;">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

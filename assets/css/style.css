@@ -7,16 +7,22 @@ header {
     padding-left: 150px;
 }
 
-div {
+/* div {
     border: 1px solid black;
+} */
+
+.card {
+    border: none;
 }
 
+.card-bg-blue {
+    background-color: navy;
+    color: whitesmoke;
+}
 
-
-
-
-
-
+.right-container {
+    margin-left: 10px;
+}
 
 .search-container button {
     margin-bottom: 20px;
@@ -36,6 +42,18 @@ div {
     border-radius: 5px;
 }
 
+#search-history button {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: lightgray;
+    color: black;
+    padding: 5px 0;
+    border-radius: 5px;
+   
+}
+
+
 #current-day h2 {
     padding-left: .63rem;
 }
@@ -52,6 +70,7 @@ div {
 
 #current-day {
     height: 15.5rem;
+    border: 1px black solid;
 }
 
 #five-day {
