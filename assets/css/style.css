@@ -13,6 +13,16 @@ header {
     border: none;
 }
 
+/* styles headers in 5 day forecast card */
+.card h5 {
+    font-size: 1.5rem;
+}
+
+/* styles text in 5 day forecast cards */
+.card p {
+    font-size: 1.1rem;
+}
+
 /* styling for the icons in the 5 day weather cards */
 .card img {
     height: 2rem;
