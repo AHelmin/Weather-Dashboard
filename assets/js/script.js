@@ -53,7 +53,8 @@ $(document).ready(function () {
     
     //saves the city name to savedSearches array if it is not already part of the saved cities, then writes the array to local storage
     function updateSavedData() {
-        if (!savedSearches.find( function(city){ city === cityInput.val()})) {
+        if (!savedSearches.find( function(city){ 
+            return city === cityInput.val()})) {
         savedSearches.unshift(cityInput.val());
         }
         if (savedSearches.length > 8) {
