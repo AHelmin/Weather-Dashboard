@@ -1,5 +1,5 @@
 
-
+/* styling for the header */
 header {
     text-align: center;
     font-weight: 900;
@@ -8,28 +8,29 @@ header {
     background: linear-gradient(to left, navy 0%, #5c8ae0 100%);
 }
 
-/* div {
-    border: 1px solid black;
-} */
-
+/* styling for the 5 day weather cards */
 .card {
     border: none;
 }
 
+/* styling for the icons in the 5 day weather cards */
 .card img {
     height: 2rem;
     width: 2rem;
 }
 
+/* adds colors to the 5 day forecast cards, unique name since they are only colored this way by .addClass in js when the data is populated */
 .card-bg-blue {
     background-color: navy;
     color: whitesmoke;
 }
 
+/* styling for the right container */
 .right-container {
     margin-left: 10px;
 }
 
+/* styling for the search button */
 .search-container button {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -42,12 +43,14 @@ header {
    
 }
 
+/* styling for the search input field */
 .search-container #city-name {
     width: 100%;
     font-size: 1.5rem;
     border-radius: 5px;
 }
 
+/* styling for the saved city buttons */
 #search-history button {
     margin-top: 20px;
     width: 100%;
@@ -59,35 +62,32 @@ header {
    
 }
 
-
+/* styling for the single day forcast h2 */
 #current-day h2 {
     padding-left: .63rem;
 }
 
+/* styling for the single day forecast p */
 #current-day p {
     padding-left: .63rem;
     padding-top: .63rem;
     font-size: 1.1rem;
 }
 
-/* .five-day-card {
-    hght: 20rem;
-} */
-
+/* styling for the right side container */
 #current-day {
     height: 15.5rem;
     border: 1px black solid;
 }
 
+/* styling for the 5 day forecast container */
 #five-day-container {
     padding-top: 10px;
     padding-left: 10px;
 }
 
+/* styling for the 5 day forecast card sub-container */
 #five-day {
     height: 25rem;
 }
 
-/* .left-container {
-    text-align: center;
-} */
