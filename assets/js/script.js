@@ -33,7 +33,7 @@ $(document).ready(function () {
     function displaySearchHistory() {
         searchHistory.html("")
         for (var i = 0; i < savedSearches.length; i++) {
-            console.log[savedSearches[i]]
+            
             if (savedSearches[i] !== '') {
             searchHistory.append(`<button type="button" id="button">${savedSearches[i]}</button>`)
             }
@@ -130,7 +130,7 @@ $(document).ready(function () {
         for (var i = 0; i < 5; i++) {
             cardContainer.children().eq(i).children().eq(0).html('');
         }
-        console.log('ok')
+        
         var inputVal = cityInput.val();
         var requestUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + inputVal + '&limit=5&appid=6c31869795f0dd512d210bae2ff7b924'
         getLocApi(requestUrl);
